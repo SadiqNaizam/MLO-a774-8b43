@@ -4,81 +4,85 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 215 17% 95%; /* Light Gray for background */
+    --foreground: 222.2 84% 4.9%; /* Dark Blue/Black for text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 222.2 84% 4.9%; /* Dark Blue/Black */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 222.2 84% 4.9%; /* Dark Blue/Black */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 91% 60%; /* Professional Blue */
+    --primary-foreground: 210 40% 98%; /* White-ish */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96.1%; /* Light Gray */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Dark Blue/Black */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96.1%; /* Light Gray */
+    --muted-foreground: 215 14% 47%; /* Medium Gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 25 95% 53%; /* Bright Orange */
+    --accent-foreground: 222.2 47.4% 11.2%; /* Dark Blue/Black */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 210 40% 98%; /* White-ish */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --success: 158 80% 39%; /* Green for positive indicators */
+    --success-foreground: 210 40% 98%; /* White-ish */
 
-    --radius: 0.5rem;
+    --border: 213 19% 87%; /* Lighter Gray */
+    --input: 213 19% 87%; /* Lighter Gray */
+    --ring: 25 95% 53%; /* Bright Orange (accent color for focus) */
 
+    --radius: 0.5rem; /* 8px */
+
+    --font-sans: "Inter", sans-serif; /* New primary font */
+
+    /* Sidebar variables - kept as is for now */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 222.2 84% 4.9%; /* Very Dark Blue/Black */
+    --foreground: 210 40% 98%; /* White-ish */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%; /* Same as dark background */
+    --card-foreground: 210 40% 98%; /* White-ish */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%; /* Same as dark background */
+    --popover-foreground: 210 40% 98%; /* White-ish */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 70% 65%; /* Lighter, desaturated Blue */
+    --primary-foreground: 222.2 47.4% 11.2%; /* Dark Blue/Black */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217.2 32.6% 17.5%; /* Dark Slate Blue */
+    --secondary-foreground: 210 40% 98%; /* White-ish */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217.2 32.6% 17.5%; /* Dark Slate Blue */
+    --muted-foreground: 215 20.2% 65.1%; /* Lighter Gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 25 75% 60%; /* Lighter, desaturated Orange */
+    --accent-foreground: 222.2 47.4% 11.2%; /* Dark Blue/Black */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 50%; /* More visible Red */
+    --destructive-foreground: 210 40% 98%; /* White-ish */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --success: 158 70% 50%; /* Lighter Green */
+    --success-foreground: 222.2 47.4% 11.2%; /* Dark Blue/Black */
+
+    --border: 217.2 32.6% 17.5%; /* Dark Slate Blue */
+    --input: 217.2 32.6% 17.5%; /* Dark Slate Blue */
+    --ring: 25 75% 60%; /* Dark Accent Orange (for focus) */
+
+    /* Sidebar variables - kept as is for now */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -97,5 +101,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans); /* Apply new font family */
   }
 }
